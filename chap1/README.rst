@@ -14,6 +14,7 @@ We will discuss how Dashlets are implemented shortly, but first lets's consider 
 3. May be associated with configuration attributes affecting their behaviour
 4. Able to encapsulate appropriate business logic for the purposes of displaying data
 5. Return a human-readable representation of that data in HTML format
+
 (Diagram showing inputs and outputs)
 
 In this chapter we will consider a range of example Dashlets which illustrate the wide range of capabilities they may provide and the many ways in which they may be implemented, but all the examples will share these central features.
@@ -64,6 +65,15 @@ If you are not familiar with developing on Share you will first want to consult 
 
 Example 1
 ~~~~~~~~~
+
+config / alfresco / site-webscripts / com / someco / components / dashlets / get-latest-doc.get.desc.xml::
+
+<webscript>
+   <shortname>Get Latest Document</shortname>
+   <description>Displays properties of the latest document in a folder to the user</description>
+   <family>dashlet</family>
+   <url>/components/dashlets/politie/get-latest-doc</url>
+</webscript>
 
 Adding configuration
 -------------
