@@ -68,12 +68,12 @@ Example 1
 
 config / alfresco / site-webscripts / com / someco / components / dashlets / get-latest-doc.get.desc.xml::
 
-<webscript>
-   <shortname>Get Latest Document</shortname>
-   <description>Displays properties of the latest document in a folder to the user</description>
-   <family>dashlet</family>
-   <url>/components/dashlets/politie/get-latest-doc</url>
-</webscript>
+   <webscript>
+      <shortname>Get Latest Document</shortname>
+      <description>Displays properties of the latest document in a folder to the user</description>
+      <family>dashlet</family>
+      <url>/components/dashlets/politie/get-latest-doc</url>
+   </webscript>
 
 Adding configuration
 -------------
