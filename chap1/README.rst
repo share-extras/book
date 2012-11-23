@@ -9,11 +9,11 @@ Central to understanding Dashlets are Web Scripts, which were discussed in the p
 
 We will discuss how Dashlets are implemented shortly, but first lets's consider the key characteristics of a Dashlet.
 
-  1. Specific to either a particular user or a particular Share site
-  2. May make use of data loaded from the Repository or from other external systems
-  3. May be associated with configuration attributes affecting their behaviour
-  4. Able to encapsulate appropriate business logic for the purposes of displaying data
-  5. Return a human-readable representation of that data in HTML format
+1. Specific to either a particular user or a particular Share site
+2. May make use of data loaded from the Repository or from other external systems
+3. May be associated with configuration attributes affecting their behaviour
+4. Able to encapsulate appropriate business logic for the purposes of displaying data
+5. Return a human-readable representation of that data in HTML format
 (Diagram showing inputs and outputs)
 
 In this chapter we will consider a range of example Dashlets which illustrate the wide range of capabilities they may provide and the many ways in which they may be implemented, but all the examples will share these central features.
@@ -62,12 +62,14 @@ This will serve as a recap to you if you have implemented web scripts before, an
 
 If you are not familiar with developing on Share you will first want to consult Chapter 1 to ensure you have a suitable lightweight development environment set up. This example and those which follow will assume that you are comfortable editing XML, HTML and other types of source files in a text editor and with deploying those into a running Alfresco instance for testing.
 
-EXAMPLE 2
+Example 1
+~~~~~~~~~
 
 Adding configuration
 -------------
 
-EXAMPLE 3
+Example 2
+~~~~~~~~~
 
 Adding behaviour (controller)
 -------------
@@ -76,7 +78,8 @@ In the last example example we saw how using some basic Freemarker conditional e
 
 To get around this problem and add more complex behaviours we must add a controller element to our dashlet web script. It is possible to define behaviours in Java or JavaScript, but we will concentrate on the latter throughout this book to simplify our implementation.
 
-EXAMPLE 3
+Example 3
+~~~~~~~~~
 
 Adding client-side behaviour
 ------------------------------
@@ -95,12 +98,15 @@ Using client-side modules - Adding a resizer
 
 This is one of the simplest modules that you can use to add client-side behaviour to your dashlets. It allows users to change the vertical height of an individual dashlet instance, which is then persisted to the dashlet's configuration.
 
-   * Any user may change the height of a user dashlet on their own dashboard
-   * Site Managers may change the height of a site dashlet
+* Any user may change the height of a user dashlet on their own dashboard
+* Site Managers may change the height of a site dashlet
+
 We will discuss more on dashlet configuration later on, but for now we'll just assume that the height is supplied to the dashlet web script as the property args.height, but noting that it may not be set if the dashlet has not been customised.
 
+Example 4
+~~~~~~~~~
 
-[Example 4] first show FTL markup, then show JS controller changes needed. Also include 4.0 method.
+First show FTL markup, then show JS controller changes needed. Also include 4.0 method.
 
 Adding Title Bar Actions
 ---------------
@@ -113,7 +119,10 @@ IMAGE
 
 Another change in Alfresco 4 was the help action provided in all Alfresco core dashlets. This allows the user to click a help icon to pop up a small amount of help text intended to explain to them how to use the dashlet. It is recommended that you supply this action in all of your dashlets.
 
-EXAMPLE 5 - ADDING TITLE BAR ACTIONS
+Example 5
+~~~~~~~~~
+
+ADDING TITLE BAR ACTIONS
 
 Introduce widget class and explain how to add it using the JS controller or FTL file
 
